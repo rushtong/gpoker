@@ -1,13 +1,11 @@
 package org.rushton.poker
 
-import groovy.json.JsonOutput
 import groovy.transform.TailRecursive
 import org.rushton.poker.model.Card
 import org.rushton.poker.model.Face
 import org.rushton.poker.model.Hand
 import org.rushton.poker.model.Suit
 import org.rushton.poker.model.ranks.*
-
 
 class Utils {
 
