@@ -1,6 +1,5 @@
 package org.rushton.poker.model.ranks
 
-import groovy.json.JsonOutput
 import org.rushton.poker.model.Face
 import org.rushton.poker.model.Hand
 import org.rushton.poker.model.Rank
@@ -24,7 +23,6 @@ class Flush extends Hand<Flush> {
 
 
     private Face getHighestFaceCard() {
-        println(JsonOutput.toJson(getCards()).toString())
         getCards().sort { it.face.ordinal() }.reverse().head().face
     }
 
